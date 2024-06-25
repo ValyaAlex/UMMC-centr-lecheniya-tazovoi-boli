@@ -1,0 +1,286 @@
+
+
+.popup__text,
+.symptoms-swiper__container {
+    display: -webkit-box;
+    display: -ms-flexbox
+}
+
+.swiper-symptoms .swiper-pagination,
+.symptoms-swiper__diagnoses #see__more,
+.symptoms-swiper__diagnoses #see__more:checked~.diagnoses__btn .unloaded,
+.symptoms-swiper__diagnoses .diagnoses__btn .loaded {
+    display: none
+}
+
+.symptoms-title {
+    background-color: var(--bg-blue);
+    margin-bottom: 15px;
+    padding: 100px 50px 100px;
+}
+
+.popup__text,
+.symptoms-swiper__if {
+    background-color: var(--bg-orange)
+}
+
+.symptoms__title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.symptoms-swiper__symptom-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px
+}
+
+.symptoms-swiper__list {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 30px 50px 45%;
+}
+
+.symptoms-swiper__item {
+    color: #232427;
+}
+
+.symptoms-swiper__diagnoses-item::before,
+.popup__item::before,
+.symptoms-swiper__item:not(:first-child)::before {
+    content: "—";
+    margin-right: 5px
+}
+
+.symptoms {
+    padding: 0;
+    padding-top: 60px;
+}
+
+.symptoms-swiper__container {
+    display: flex
+}
+
+.symptoms-swiper .swiper-symptoms {
+    min-height: 400px;
+    width: 90%;
+    padding: 0 5px 5px 5px;
+}
+
+.symptoms-swiper .swiper-button-next,
+.symptoms-swiper .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+    z-index: 1;
+    background-image: url(../icon/swiper-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center center
+}
+
+.symptoms-swiper .swiper-button-next:hover,
+.symptoms-swiper .swiper-button-prev:hover {
+    background-color: rgba(244, 102, 42, .3)
+}
+
+.swiper-rtl .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.symptoms-swiper .swiper-button-next:after,
+.symptoms-swiper .swiper-button-prev:after {
+    content: ''
+}
+
+.symptoms-swiper .swiper-button-prev {
+    -webkit-transform: translate(-10px) rotate(180deg);
+    -ms-transform: translate(-10px) rotate(180deg);
+    transform: translate(-10px) rotate(180deg)
+}
+
+.symptoms-swiper .swiper-button-next {
+    -webkit-transform: translate(10px);
+    -ms-transform: translate(10px);
+    transform: translate(10px)
+}
+
+.swiper-pagination-container {
+    position: relative;
+    margin-bottom: 120px
+}
+
+.symptoms-swiper {
+    position: relative;
+    margin: 0 auto 60px
+}
+
+.swiper-symptoms .swiper-slide {
+    outline: 1px solid var(--border);
+    border-radius: 20px;
+}
+
+.swiper-symptoms .swiper-wrapper {
+    min-height: 100%;
+    height: auto
+}
+
+.swiper-slide-bg {
+    background-repeat: no-repeat;
+    background-position: -230px 100%;
+    background-size: cover
+}
+
+.slide-1 {
+    background-image: url(../img/slide1.webp)
+}
+
+.slide-2 {
+    background-image: url(../img/slide2.webp)
+}
+
+.slide-3 {
+    background-image: url(../img/slide3.webp)
+}
+
+.slide-4 {
+    background-image: url(../img/slide4.webp)
+}
+
+.slide-5 {
+    background-image: url(../img/slide5.webp);
+    background-position: -265px 100%
+}
+
+.popup {
+    position: relative;
+    vertical-align: middle
+}
+
+.popup__text {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    position: absolute;
+    top: 100%;
+    left: -140px;
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
+    padding: 7px 11px 14px;
+    width: 270px;
+    font-size: 16px;
+    min-height: 30px;
+    line-height: 25px;
+    opacity: 0;
+    color: var(--gray);
+    border-radius: 6px;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    -webkit-transition: opacity .2s, z-index .2s;
+    -o-transition: opacity .2s, z-index .2s;
+    transition: opacity .2s, z-index .2s;
+    z-index: -1
+}
+
+.popup-mobile {
+    top: -135px;
+    bottom: -150%
+}
+
+.popup-mobile-320 {
+    top: -25px;
+    bottom: -100%
+}
+
+.popup:hover .popup__text {
+    opacity: 1;
+    z-index: 1
+}
+
+.popup__icon {
+    fill: var(--gray);
+    -webkit-transition: fill .3s;
+    -o-transition: fill .3s;
+    transition: fill .3s
+}
+
+.popup__icon:hover {
+    fill: var(--orange)
+}
+
+.symptoms-swiper__diagnoses {
+    margin-bottom: 60px
+}
+
+.symptoms-swiper__diagnoses-title  {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 23px
+}
+
+.symptoms-swiper__diagnoses-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.symptoms-swiper__diagnoses-list {
+    width: 49%
+}
+
+.list-two {
+    margin-right: 0;
+    margin-bottom: 10px
+}
+
+.symptoms-swiper__if {
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 60px
+}
+
+.symptoms-swiper__if-text {
+    margin-bottom: 20px
+}
+
+.symptoms-swiper__if-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0px 40px;
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    text-align: center;
+    -webkit-transition: color .3s, background .3s, border .3s;
+    -o-transition: color .3s, background .3s, border .3s;
+    transition: color .3s, background .3s, border .3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 45px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.symptoms-swiper__if-btn:hover {
+    background-color: var(--hover-orange)
+}
