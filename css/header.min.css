@@ -16,11 +16,8 @@
 
 .header__container {
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-line-pack: center;
-    align-content: center;
+    align-items: center;
     padding: 20px 40px
 }
 
@@ -36,20 +33,19 @@
 .header__nav {
     display: flex;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center
 }
 
 .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    gap: 20px;
 }
 
-.nav__item {
-    padding: 0 30px;
-    font-size: 16px
+.nav__list .nav__item {
+    font-size: 16px;
+    margin-bottom: 0;
 }
 
 .nav__link {
@@ -88,4 +84,52 @@
 
 .header__btn--active {
     opacity: 1;
+}
+
+.header__tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    transition: color 0.4s ease;
+}
+
+.header__tel:focus {
+    color: var(--hover-orange);
+}
+
+.header__tel:hover {
+    color: var(--orange);
+}
+
+.header__tel:active {
+    color: var(--orange);
+}
+
+.header__icon {
+    fill: var(--black);
+    transition: fill 0.4s ease;
+}
+
+.header__tel:focus .header__icon {
+    fill: var(--hover-orange);
+}
+
+.header__tel:hover .header__icon {
+    fill: var(--orange);
+}
+
+.header__tel:active .header__icon {
+    fill: var(--hover-orange);
+}
+
+.header__feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__contacts {
+    display: none;
 }
